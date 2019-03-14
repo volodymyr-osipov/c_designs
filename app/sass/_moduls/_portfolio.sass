@@ -1,5 +1,77 @@
 .portfolio
+
+.portfolio__list
+	display: flex
+	justify-content: space-between
+
+.portfolio__list_item
+	margin: 0 15px
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+.portfolio__text
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	width: 360px
+	text-align: right
+	.bg__heading
+		width: 230px
+		background: url(../img/bg/bg_h2.png) no-repeat
 	p
 		margin: 45px 0
-		text-align: right
-		
+		text-align: right	
+
+.portfolio__img
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-end
+	width: 760px
+	&_list
+		display: flex
+		align-items: center
+		width: 360px
+		height: 230px
+		margin: 15px
+		background: #314E55
+		border-top-left-radius: 19px
+		&:nth-child(1)
+			margin-left: 0
+		&:nth-child(3)
+			margin-left: 0
+		&:nth-child(2)
+			margin-right: 0
+		&:nth-child(4)
+			margin-right: 0
+
+.portfolio__icon
+	display: flex
+	flex-wrap: wrap
+	width: calc(100% - 180px)
+	margin: 0 auto
+	margin-top: 85px
+	&_item
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 50%
+		height: 557px
+		background: $yellow
+		&:nth-child(2)
+			background: $blue
+		&:nth-child(3)
+			background: $orange
+		&:nth-child(4)
+			background: $purple
+		h3
+			text-align: center
+			font-size: 38px
+			color: $white
+		.portfolio__icon_hed
+			display: flex
+			flex-direction: column
+			align-items: center
+			img
+				margin-bottom: 50px
